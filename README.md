@@ -7,7 +7,8 @@ Steps:
 - Writes an excel with a matrix comparing the different lines between the files. 
   Between "index" and "col" columns we have the similarity indexes. In the "posiciones" column I identify the differences.
 
-Image description:
+
+"output.PNG" file description:
 En este caso, la primera línea (con index 0)  tiene un índice de similitud con la segunda línea de 0.998 y con la quinta línea de 0.998. 
 En la columna 3 las diferencias con la segunda línea son "1('replace', 0, 1, 0, 1)('equal', 1, 463, 1, 463)". 
 Aparece la numeración de la línea: 1 (los índices empiezan en cero, por eso la segunda línea la identifico con 1) seguida de 
