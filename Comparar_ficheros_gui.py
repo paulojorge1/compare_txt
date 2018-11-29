@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 24 10:32:36 2018
 
-@author: paulo.conceicao
-"""
 
 from PyQt5.QtWidgets import (QMainWindow, QTextEdit, 
     QAction, QFileDialog, QApplication)
@@ -58,19 +53,15 @@ class Import(QMainWindow):
 
     def getold1(self):
         
-#        old1, filter = QFileDialog.getOpenFileName(self, 'Seleccionar fichero antiguo', 'C:\\Data\\ficheros_resumen - copia\\', filter='*.txt *.csv')
         old1, filter = QFileDialog.getOpenFileName(self, 'Seleccionar fichero antiguo', 'W:\\', filter='*.txt *.csv')
         if old1:
             self.textEdit.setText('\nCargar ficheros... ')
-#            self.textEdit.setText('\nFichero antiguo: ' + str(old1)) 
             self.old1 = old1 
 
     def getnew1(self):
         
-#        new1, filter = QFileDialog.getOpenFileName(self, 'Seleccionar fichero nuevo', 'C:\\Data\\ficheros_resumen - copia\\', filter='*.txt *.csv')
         new1, filter = QFileDialog.getOpenFileName(self, 'Seleccionar fichero nuevo', 'W:\\', filter='*.txt *.csv')
         if new1:
-#            self.textEdit.append('\nFichero nuevo: ' + str(new1)) 
             self.new1 = new1 
             
     def showDialog(self):
@@ -184,8 +175,6 @@ def main():
     ex.show()
     sys.exit(app.exec_())
 
-#import profile
-#profile.run('main()')    
 
 if __name__ == '__main__':
     main()
